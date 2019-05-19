@@ -1,0 +1,30 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h1>User Ratings And Movies</h1>
+  </div>
+  <div class="panel-body">
+    <table class="table table-striped table-bordered">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>movieName</th>
+          <th>rating</th>
+          <th>Description</th>
+          <th>Picture</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let movie of movies | async">
+          <td>{{movie.userName}}</td>
+          <td>{{movie.movieName}}</td>
+          <td>{{movie.rating}}</td>
+          <td>{{movie.description}}</td>
+          <td><img src="{{movie.picture}}" width="150" height="150"/></td>
+          
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+

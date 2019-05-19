@@ -1,0 +1,26 @@
+<h3>Update Movie</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" required [(ngModel)]="movieData.name" name="name" value={{tab[0]}}>
+    </div>
+
+    <div class="form-group">
+      <label for="name">Description</label>
+      <input type="text" class="form-control" id="description" required [(ngModel)]="movieData.description" name="description" value={{tab[1]}}>
+    </div>
+
+    <div class="form-group">
+      <label for="name">Picture</label>
+      <input type="text" class="form-control" id="picture" required [(ngModel)]="movieData.picture" name="picture" value={{tab[2]}}>
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
+
+<div [hidden]="!submitted">
+  <h4>You submitted successfully!</h4>
+  <!-- <button class="btn btn-success" (click)="newEmployee()">Add</button> -->
+</div>
