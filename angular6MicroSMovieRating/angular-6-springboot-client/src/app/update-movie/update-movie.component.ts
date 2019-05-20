@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Observable } from "rxjs";
 import { MovieService } from "./../movie.service";
-import { Rating } from "../movie";
+import { Rating } from "../rating";
 import { HttpClient } from '@angular/common/http';
 import { Http } from '@angular/http';
 @Component({
@@ -33,24 +33,7 @@ export class UpdateMovieComponent implements OnInit {
     
   }
 
-  /*reloadData(){
-    var id = JSON.parse(localStorage.getItem("idUser"));
-    console.log("id equel"+id);
-    this.employee = this.employeeService.getEmployee(id);
-    console.log("sedf" + this.employee);
-      
-    //return this.employee;
-    /*return this.http.get<Employee[]>('http://localhost:8081/movies/movieById' + "/" + id);
-    this.http.get('http://localhost:8081/movies/movieById' + "/" + id).subscribe(data => {
-      
-      //return data.json();
-
-      //this.source.load(data.json());
-      console.log("tab"+data.toString());
-      
-
-    });
-  }*/
+ 
   movie: Rating = new Rating();
   submitted = false;
   //employee:Employee[];
@@ -62,25 +45,7 @@ export class UpdateMovieComponent implements OnInit {
   }
 
   save() {
-    /*var id = JSON.parse(localStorage.getItem("idUser"));
-    this.employees = this.http.get('http://localhost:8081/movies/movieById' + "/" + id);
-    console.log("employe value " + this.employees);
-    this.employeeService.updateEmployee(id, this.employees)
-      .subscribe(data => console.log(data), error => console.log(error));
-    this.employees = new Employee();*/
-    
-    /*var id = JSON.parse(localStorage.getItem("idUser"));
-    console.log("id equel "+id);
-    return this.httpClient.put(`${this.baseUpdate}` + id, movieData);*/
-    /*if (this.movieData.picture == "") {
-
-      this.movieData.picture = this.tab[2];
-      
-
-    }
-    
-    this.movieData.name = this.tab[0];
-    this.movieData.description = this.tab[1];*/
+  
     this.movieData.userName = this.tab[0];
     this.movieData.movieName = this.tab[1];
     this.movieData.rating = this.tab[2];

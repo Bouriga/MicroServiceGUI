@@ -1,4 +1,4 @@
-import { Rating } from '../movie';
+import { Rating } from '../rating';
 import { Component, OnInit, Input } from '@angular/core';
 import { MovieService } from '../movie.service';
 import { MovieListComponent } from '../movie-list/movie-list.component';

@@ -11,7 +11,7 @@ export class MovieService {
   private baseUrlInfo = 'http://localhost:8081/movies/movieById';
   private baseAdd ='http://localhost:8084/ratings/add';
   private baseDelete = 'http://localhost:8084/ratings/delete';
-  private baseUpdate = 'http://localhost:8084/ratings/update';
+  //private baseUpdate = 'http://localhost:8084/ratings/update';
 
   constructor(private http: HttpClient) { }
 

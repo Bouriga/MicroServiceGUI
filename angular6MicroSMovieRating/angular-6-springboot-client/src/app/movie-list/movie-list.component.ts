@@ -1,6 +1,6 @@
 import { Observable } from "rxjs";
 import { MovieService } from "../movie.service";
-import { Rating } from "../movie";
+import { Rating } from "../rating";
 import { Component, OnInit } from "@angular/core";
 import { Router } from '@angular/router';
 
